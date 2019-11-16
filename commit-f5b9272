@@ -1,0 +1,171 @@
+From f5b9272d70c789200fbc03de61e9ec77c46d7c5e Mon Sep 17 00:00:00 2001
+From: ganiyu babatunde <ganiyu babatunde>
+Date: Sat, 16 Nov 2019 00:48:43 +0100
+Subject: index on master: 9b1dfbd Initial commit
+
+
+diff --git a/img/pic1.jpg b/img/pic1.jpg
+new file mode 100644
+index 0000000..e289a16
+Binary files /dev/null and b/img/pic1.jpg differ
+diff --git a/img/pic2.jpg b/img/pic2.jpg
+new file mode 100644
+index 0000000..d04c922
+Binary files /dev/null and b/img/pic2.jpg differ
+diff --git a/img/pic3.jpg b/img/pic3.jpg
+new file mode 100644
+index 0000000..badc94f
+Binary files /dev/null and b/img/pic3.jpg differ
+diff --git a/img/pic4.jpg b/img/pic4.jpg
+new file mode 100644
+index 0000000..5dd592d
+Binary files /dev/null and b/img/pic4.jpg differ
+diff --git a/img/pic5.jpg b/img/pic5.jpg
+new file mode 100644
+index 0000000..9d7006d
+Binary files /dev/null and b/img/pic5.jpg differ
+diff --git a/img/pic6.jpg b/img/pic6.jpg
+new file mode 100644
+index 0000000..c5c6640
+Binary files /dev/null and b/img/pic6.jpg differ
+diff --git a/img/pic7.jpg b/img/pic7.jpg
+new file mode 100644
+index 0000000..77883a7
+Binary files /dev/null and b/img/pic7.jpg differ
+diff --git a/img/pic8.jpg b/img/pic8.jpg
+new file mode 100644
+index 0000000..13fa70a
+Binary files /dev/null and b/img/pic8.jpg differ
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..c989b3b
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,37 @@
++<!DOCTYPE html>
++<html>
++<head>
++			<title>Geosearch</title>
++			<meta charset="UTF-8">
++		    <meta name="author" content="Ganiyu Babatunde">
++		    <meta name="description" content="A tool that allows users to search for a place, view position on map with map marker and check local weather conditions.">
++			<meta name="viewport" content="width=device-width, initial-scale=1">
++	        <link rel="stylesheet" type="text/css" href="style/style.css">
++	        
++</head>
++<body>
++	<!------center text begin-->
++	<div class="pimg1">
++			<div class="ptext">
++				<span class="border">
++						<h1>Geosearch</h1>
++				A tool that allows users to search for a place, view position on map with map marker and check local weather conditions
++				</span>
++			</div>
++		</div>
++		<!------center text ends-->
++
++<!------form begins-->
++<div class="wrap">
++		<div class="search">
++		   <input type="text" class="searchTerm" placeholder="lets go on a Tour?">
++		   <button type="submit" class="searchButton">
++			 <i class="fa fa-search"></i>
++		  </button>
++		</div>
++	 </div>
++<!------form ends-->
++
++<script src="scripts.js"></script>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/scripts.js b/scripts.js
+new file mode 100644
+index 0000000..e69de29
+diff --git a/style/style.css b/style/style.css
+new file mode 100644
+index 0000000..a58d27a
+--- /dev/null
++++ b/style/style.css
+@@ -0,0 +1,79 @@
++/*body begins*/
++body, html{
++    height: 100%;
++    margin: 0;
++    font-size: 15px;
++    font-family: "lato", sans-serif;
++    font-weight: 400;
++    line-height: 1.8em;
++    background-image: url("../img/pic7.jpg");
++    background-position: center;
++    background-repeat: no-repeat;
++    background-size: cover;
++}
++
++/*header begins*/
++h1{
++    font-size: 40px;
++    color: white;
++}
++
++.ptext {
++    position: absolute;
++    top: 10%;
++    width: 100%;
++    text-align: center;
++    color: black;
++    letter-spacing: 10px;
++    line-height: 40px;
++    text-transform: uppercase;
++}
++input {
++    justify-content: center;
++    width:600px;
++    height:30px;
++    margin-bottom:15px;
++    border-radius: 10px;
++}
++
++  .search {
++    width: 100%;
++    position: relative;
++    display: flex;
++  }
++  
++  .searchTerm {
++    width: 100%;
++    border: 3px solid #00B4CC;
++    border-right: none;
++    padding: 5px;
++    height: 20px;
++    border-radius: 5px 0 0 5px;
++    outline: none;
++    color: #9DBFAF;
++  }
++  
++  .searchTerm:focus{
++    color: #00B4CC;
++  }
++  
++  .searchButton {
++    width: 40px;
++    height: 36px;
++    border: 1px solid #00B4CC;
++    background: #00B4CC;
++    text-align: center;
++    color: #fff;
++    border-radius: 0 5px 5px 0;
++    cursor: pointer;
++    font-size: 20px;
++  }
++  
++  /*Resize the wrap to see the search bar change!*/
++  .wrap{
++    width: 30%;
++    position: absolute;
++    top: 50%;
++    left: 50%;
++    transform: translate(-50%, -50%);
++  }
+\ No newline at end of file
